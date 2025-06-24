@@ -1,0 +1,375 @@
+/* 🔧 기본 세팅 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.addct {
+    width: 100%;
+    height: 100%;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: whitesmoke;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    background: whitesmoke;
+    opacity: 0.9;
+    width: 100%;
+    height: 0;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+header:hover::after {
+    height: 280px;
+}
+
+.logo {
+    background: url(../img/logo.png) no-repeat center;
+    background-size: 80%;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    left: 5%;
+}
+
+/* 상단 메뉴 */
+.menu {
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    width: 990px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.menu>li {
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.5s;
+    margin: 0 2.8%;
+}
+
+.menu>li:hover {
+    background: #dddad2;
+}
+
+.menu>li>a {
+    color: black;
+}
+
+/* 아이콘 */
+.icon1,
+.icon2,
+.icon3 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 45px;
+}
+
+.icon1 {
+    right: 11%;
+}
+
+.icon2 {
+    right: 7%;
+}
+
+.icon3 {
+    right: 3%;
+}
+
+/* 서브 메뉴 */
+.sub {
+    width: 100px;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.sub>li>a {
+    color: black;
+}
+
+.sub>li:hover {
+    background: #dddad2;
+}
+
+.menu:hover .sub {
+    height: 300px;
+}
+
+/* ================= SECTION ================= */
+section {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+/* ================= BEST SELLER ================= */
+#product-carousel {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* ================= 향 노트 ================= */
+.note {
+    width: 1000px;
+    height: 1150px;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+}
+
+.note0 {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: -30px;
+}
+
+.note1,
+.note2,
+.note3,
+.note4,
+.note5,
+.note6,
+.note7,
+.note8,
+.note9 {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+}
+
+.note1 {
+    top: 50px;
+    left: 0;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-01.png);
+    background-size: 200%;
+    background-position: 70%;
+}
+
+.note2 {
+    top: 50px;
+    left: 350px;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-02.png);
+    background-size: 200%;
+    background-position: 70%;
+}
+
+.note3 {
+    top: 50px;
+    right: 0;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-03.png);
+    background-size: 200%;
+    background-position: 70%;
+}
+
+.note4 {
+    top: 400px;
+    left: 0;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-04.png);background-size: 200%;
+    background-position: 70%;
+}
+
+.note5 {
+    top: 400px;
+    left: 350px;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-05.png);
+    background-size: 200%;
+    background-position: 70%;
+}
+
+.note6 {
+    top: 400px;
+    right: 0;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-06.png);
+    background-size: 200%;
+    background-position: 70%;
+}
+
+.note7 {
+    top: 750px;
+    left: 0;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-07.png);
+    background-size: 200%;
+    background-position: 70%;
+}
+
+.note8 {
+    top: 750px;
+    left: 350px;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-08.png);
+    background-size: 200%;
+    background-position: 70%;
+}
+
+.note9 {
+    top: 750px;
+    right: 0;
+    background-image: url(https://media.11corporation.com/cdn/addict/shopby/fragrance/modal/20240717/note-pc-09.png);
+    
+}
+
+.note1::before,
+.note2::before,
+.note3::before,
+.note4::before,
+.note5::before,
+.note6::before,
+.note7::before,
+.note8::before,
+.note9::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.note1:hover::before,
+.note2:hover::before,
+.note3:hover::before,
+.note4:hover::before,
+.note5:hover::before,
+.note6:hover::before,
+.note7:hover::before,
+.note8:hover::before,
+.note9:hover::before {
+    height: 300px;
+}
+
+.note1>span,
+.note2>span,
+.note3>span,
+.note4>span,
+.note5>span,
+.note6>span,
+.note7>span,
+.note8>span,
+.note9>span {
+    display: block;
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    line-height: 30px;
+    opacity: 0;
+    color: white;
+    transition: all 0.3s;
+}
+
+.note1:hover span,
+.note2:hover span,
+.note3:hover span,
+.note4:hover span,
+.note5:hover span,
+.note6:hover span,
+.note7:hover span,
+.note8:hover span,
+.note9:hover span {
+    opacity: 1;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    width: 1210px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* 또는 space-evenly */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+footer>div {
+    line-height: 25px;
+}
+
+b {
+    font-weight: bold !important;
+    font-size: 18px;
+}
+
+.fot1,
+.fot2,
+.fot3,
+.fot4 {
+    float: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.fot1,
+.fot2 {
+    width: 250px;
+    height: 200px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.fot2 {
+    margin-left: 50px;
+}
+
+.fot3 {
+    width: 410px;
+    height: 200px;
+    margin-left: 50px;
+    padding-right: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.fot3>a {
+    color: black;
+    font-weight: bold;
+}
+
+.fot4 {
+    width: 150px;
+    height: 100px;
+    margin-left: 50px;
+    position: relative;
+}
